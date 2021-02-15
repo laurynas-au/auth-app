@@ -1,3 +1,5 @@
+// resets
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,15 +10,35 @@ html {
   font-size: 62.5%;
 }
 
-body {
+// imports
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+
+// variables
+
+// font weights
+
+$thin: 300;
+$regular: 400;
+$bold: 700;
+
+
+// global styles 
+
+
+body, input, button, a {
   color: #1d1d1d;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Noto Sans JP", Arial, Helvetica, sans-serif;
+  font-weight: $regular;
   font-size: 1.6rem;
 }
 
 h2 {
   font-size: 3rem;
 }
+
+
+// Layout 
 
 .full-page-container {
   min-height: 100vh;
